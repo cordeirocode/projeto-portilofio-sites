@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #A9D18E;
+    --font-header: 'Passion One', cursive;
+    --font-p: 'Roboto', sans-serif;
+    --font-h1: 'Playfair Display', serif;
+    --font-h2: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    /* border: 1px dotted black; */
+    flex: 0 0 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);
+}
+
+header > nav {
+    /* border: 1px dotted black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+main > div.titulo {
+    background-color: white;
+    font-family: var(--font-h1);
+    font-size: 1em;
+    text-align: center;
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+
+    
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+main > div.modulos {
+    background-color: white;
+    font-family: var(--font-h2);
+    font-size: 1em;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+main > div.modulos > h2 {
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+main > div.modulos > p {
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
